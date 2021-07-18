@@ -1,0 +1,10 @@
+.danger{
+    background-color: lightskyblue;
+    text-align: center;
+    height: 30vh;
+    border-radius: 20px;
+}
+h1{
+    padding: 5%;
+    font-size: 10vh;
+}

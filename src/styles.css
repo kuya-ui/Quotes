@@ -2,13 +2,13 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 
 body{
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     color: black;
 }
-h1{
+/* h1{
     font-size: 50px;
     padding: 5%;
-}
+} */
 /* .dance{
     background-color: lightskyblue;
     text-align: center;
