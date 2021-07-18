@@ -7,8 +7,15 @@
     <div class="row">
         <div class="col-md-6">
             <div *ngFor='let quote of quote; let i = index'>
-                
+                <div>
+                    <h6 class="card-body" id={{1}} appStrikeThrough>{{quote.name}} posted on {{quote.completeDate|date|uppercase}}</h6> 
+                    <button (click)='toggleDetail(i)' class="btn btn-primary">Check here</button>
+                </div><br>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]='quotes' (isComplete) = 'deleteQuote(($event,i)' (upvote)='upVote($event,i)' (downvote)='downVote($event,i)'></app-quote-detail>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
