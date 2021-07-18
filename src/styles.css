@@ -5,3 +5,13 @@ body{
     background-color: whitesmoke;
     color: black;
 }
+h1{
+    font-size: 50px;
+    padding: 5%;
+}
+.dance{
+    background-color: lightskyblue;
+    text-align: center;
+    height: 30vh;
+    border-radius: 20px;
+}
