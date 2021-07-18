@@ -17,3 +17,18 @@ h2{
     padding: 3%;
     text-align: center;
 }
+.car-body{
+    background-color: burlywood;
+    border: 1px solid;
+    padding: 65px;
+    font-size: 15px;
+    padding: 20px;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+.jumbotron{
+    font-size: 20px;
+    background-color: lightblue;
+}
