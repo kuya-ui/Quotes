@@ -19,7 +19,7 @@ export class QuoteDetailComponent implements OnInit {
   likebuttonclick(quote){
     this.downVote.emit(quote)
   }
-  dislikebuttonclick(quote){
+  dislikebuttonclick('quote'){
     this.downVote.emit(quote)
   }
 
