@@ -10,9 +10,9 @@ import { Quotes } from '../quotes';
 })
 export class QuoteDetailComponent implements OnInit {
   @Input() quote:Quotes;
-  @Output() isComplete:EventEmitter <boolean> = new EventEmitter();
-  @Output() upVote:EventEmitter <Quotes> = new EventEmitter();
-  @Output() downVote:EventEmitter <Quotes> = new EventEmitter();
+  @Output() isComplete = new EventEmitter<boolean>();
+  // @Output() upVote:EventEmitter <Quotes> = new EventEmitter();
+  // @Output() downVote:EventEmitter <Quotes> = new EventEmitter();
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }

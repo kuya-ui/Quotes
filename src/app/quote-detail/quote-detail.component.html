@@ -1,4 +1,10 @@
 <p>{{quote.description}}</p>
-<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button><br>
-    <button (click) = "likebuttonclick()" class="btn btn-success"> like</button>
-    <button (click) ="dislikebuttonclick()" class="btn btn-darker">dislike</button>
+<p> countdown: {{quote.completeDate|dateCount}}</p>
+<p>{{quote.email}}</p>
+<p>{{quote.upVote}}</p>
+<button (click) = "likebuttonclick()" class="btn btn-success"> like</button><br><br>
+<p>{{quote.downVote}}</p>
+<button (click) ="dislikebuttonclick()" class="btn btn-darker">dislike</button>
+<hr>
+<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+ 
