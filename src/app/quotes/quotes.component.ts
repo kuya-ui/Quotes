@@ -1,3 +1,4 @@
+import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
 
@@ -8,9 +9,9 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[] =[
-    new Quotes(1,"Success is most often achieved by those who don't know that failure is inevitable",'Coco Chanel', "email",new Date(2021,2,3),0,0),
-    new Quotes(2,"Have the courage to follow your heart and intuition, There somehow know what you truly want to become", 'Steve Jobs', "email",new Date(2021,18,7),0,0),
-    new Quotes(2,"don't feel stupid if you don't like what everyone else pretends to love", 'Emma Watson', "email",new Date(2021,3,5),0,0)
+    new Quotes(1,"success","Success is most often achieved by those who do not know that failure is inevitable",'Coco Chanel', "email",new Date(2021,2,3),0,0),
+    new Quotes(2,"life", "Have the courage to follow your heart and intuition, There somehow know what you truly want to become", 'Steve Jobs', "email",new Date(2021,18,7),0,0),
+    new Quotes(2,"inspiration","Do not feel stupid if you don't like what everyone else pretends to love", 'Emma Watson', "email",new Date(2021,3,5),0,0)
   ]
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
