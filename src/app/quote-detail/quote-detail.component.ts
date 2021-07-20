@@ -9,18 +9,18 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  @Input() quote:Quote;
+  @Input() quote:Quotes;
   @Output() isComplete:EventEmitter <boolean> = new EventEmitter();
   @Output() upVote:EventEmitter <Quotes> = new EventEmitter();
   @Output() downVote:EventEmitter <Quotes> = new EventEmitter();
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  likebuttonclick(quote){
-    this.downVote.emit(quote)
+  likebuttonclick(){
+    this.quote.upVote +=1;
   }
-  dislikebuttonclick('quote'){
-    this.downVote.emit(quote)
+  dislikebuttonclick(){
+    this.quote.downVote +=1;
   }
 
   constructor() { }
